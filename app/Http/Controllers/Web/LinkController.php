@@ -7,5 +7,9 @@ use Illuminate\Http\Request;
 
 class LinkController extends Controller
 {
-    //
+
+    public function show_link_generator()
+    {
+        return view('frontend.app');
+    }
 }

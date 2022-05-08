@@ -12,9 +12,9 @@ const tailwindcss = require("tailwindcss"); /* Add this line at the top */
  |
  */
 mix.setResourceRoot(process.env.MIX_ASSET_URL);
-mix.js("resources/js/app.js", "public/app.js")
+mix.js("resources/js/app.js", "public/js/app.js")
     .sass("resources/css/app.scss", "public/css/app.css")
     .options({
         processCssUrls: false,
         postCss: [tailwindcss("./tailwind.config.js")],
-    })
+    });
