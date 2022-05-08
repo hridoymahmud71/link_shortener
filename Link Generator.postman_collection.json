@@ -1,0 +1,139 @@
+{
+	"info": {
+		"_postman_id": "79ab0cbd-5532-4f05-a84a-d2b90e9e72b4",
+		"name": "Link Generator",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Generate a link",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"given_link\":\"sdfsdf\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/generate-link",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"generate-link"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Look up",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"client\": {\r\n\"clientId\":\"yourcompanyname\",\r\n\"clientVersion\":\"1.5.2\"\r\n},\r\n\"threatInfo\": {\r\n\"threatTypes\":[\"MALWARE\", \"SOCIAL_ENGINEERING\"],\r\n\"platformTypes\":[\"WINDOWS\"],\r\n \"threatEntryTypes\": [\"URL\"],\r\n\"threatEntries\":[\r\n{\"url\": \"https://testsafebrowsing.appspot.com/s/phishing.html\"}\r\n\r\n]\r\n}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://safebrowsing.googleapis.com/v4/threatMatches:find?key={{api_key}}",
+					"protocol": "https",
+					"host": [
+						"safebrowsing",
+						"googleapis",
+						"com"
+					],
+					"path": [
+						"v4",
+						"threatMatches:find"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "{{api_key}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Threat list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://safebrowsing.googleapis.com/v4/threatLists?key={{api_key}}",
+					"protocol": "https",
+					"host": [
+						"safebrowsing",
+						"googleapis",
+						"com"
+					],
+					"path": [
+						"v4",
+						"threatLists"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "{{api_key}}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://192.168.0.108/link_shortener/api",
+			"type": "string"
+		},
+		{
+			"key": "api_key",
+			"value": "AIzaSyCYJufcUzi58ixGxsuNaLa6ie1PfbjMFJA",
+			"type": "string"
+		}
+	]
+}
