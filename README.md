@@ -19,7 +19,7 @@ Just run it like a laravel project by hitting url, not with serve
 _Vue was integrated using laravel mixin, so you will not be able to run the frontend using serve_
 import the link_ shortener.sql file (You may truncate the links table if you want to start fresh)
 
-#### Does this allow subfolder
+#### Does this allow subfolder ?
 Yes, it does run on a subfolder
 in .env file if there is no subfolder , make sure the variables are like this
 
