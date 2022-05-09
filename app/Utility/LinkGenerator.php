@@ -8,11 +8,11 @@ class LinkGenerator
 
     public static function generate_link($given_link){
 
-        $slug = Str::random(6);
+        $slug = strtolower(Str::random(6));
 
         //create a slug unless it is unique
         while(Link::where("slug",$slug)->count() > 0){
-            $slug = Str::random(6);
+            $slug = strtolower(Str::random(6));
         }
 
         $new_link = new Link;
