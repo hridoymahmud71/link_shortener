@@ -23,16 +23,16 @@ If the Original given url is empty/invalid/malicious , exeption(s) will be shown
 Yes, it does run on a subfolder
 in .env file if there is no subfolder , make sure the variables are like this
 
+```
 BASENAME="/"
 MIX_ASSET_URL="/public"
-
-
-BASENAME="/link_shortener"
-MIX_ASSET_URL="/link_shortener/public"
+```
 
 if you have subfolder the variables should be like:
 
+```
 BASENAME="/[path/to/subfolder]"
 MIX_ASSET_URL="/[path/to/subfolder]/public"
+```
 
 
