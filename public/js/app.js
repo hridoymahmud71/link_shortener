@@ -99,6 +99,22 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log('Example component mounted.');
@@ -590,9 +606,77 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [_vm._v("Hello, Example Component!")])
+  return _vm._m(0)
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: " bg-gray-200" }, [
+      _c(
+        "div",
+        {
+          staticClass:
+            "container h-screen flex flex-col justify-center items-center",
+        },
+        [
+          _c("div", { staticClass: "flex justify-center items-center" }, [
+            _c("input", {
+              staticClass:
+                "h-16 w-96 px-6  z-0 focus:shadow focus:outline-none",
+              attrs: { type: "text", placeholder: "Paste your link here" },
+            }),
+            _vm._v(" "),
+            _c(
+              "button",
+              {
+                staticClass:
+                  "h-16 p-4 rounded-r-md text-white  bg-blue-500 hover:bg-blue-600",
+              },
+              [_vm._v("Generate Link")]
+            ),
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "flex justify-center items-center" }, [
+            _c("input", {
+              staticClass:
+                "h-16 w-96 px-4 text-gray-600 text-2xl  z-0 focus:shadow focus:outline-none",
+              attrs: {
+                type: "text",
+                value: "https://192.158.63.65/23jds4e",
+                readonly: "",
+              },
+            }),
+            _vm._v(" "),
+            _c(
+              "button",
+              {
+                staticClass:
+                  "h-16 p-4 rounded-r-md text-white  bg-yellow-700 hover:bg-yellow-800",
+              },
+              [_vm._v("Copy Link")]
+            ),
+            _vm._v(" "),
+            _c("label", { staticClass: "text-small text-gray-700 p-4" }, [
+              _vm._v("Copied"),
+            ]),
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "mt-4" }, [
+            _c("div", { staticClass: "text-green-600" }, [
+              _vm._v("This is a success response"),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "text-red-500" }, [
+              _vm._v("This is a Error Response"),
+            ]),
+          ]),
+        ]
+      ),
+    ])
+  },
+]
 render._withStripped = true
 
 
