@@ -34,6 +34,7 @@
 <body>
     <noscript>To run this application, JavaScript is required to be enabled.</noscript>
     <div id="app">
+        <link-generation-component></link-generation-component>
     </div>
 
 
