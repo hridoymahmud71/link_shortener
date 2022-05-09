@@ -15,9 +15,9 @@ Go to https://testsafebrowsing.appspot.com/  to find malicious site links
 If the Original given url is empty/invalid/malicious , exeption(s) will be shown
 
 #### How to run
-Just run it like a laravel project by hitting url, not with serve 
-_Vue was integrated using laravel mixin, so you will not be able to run the frontend using serve_ 
-import the link_ shortener.sql file (You may truncate the links table if you want to start fresh)
+* Just run it like a laravel project by hitting url, not with serve 
+* _Vue was integrated using laravel mixin, so you will not be able to run the frontend using serve_ 
+* Import the link_ shortener.sql file (You may truncate the links table if you want to start fresh)
 
 #### Does this allow subfolder ?
 Yes, it does run on a subfolder
