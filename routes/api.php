@@ -16,7 +16,7 @@ use App\Http\Controllers\Api\LinkController;
 |
 */
 
-Route::get('/generate-link', [LinkController::class, 'generate_link']);
+Route::any('/generate-link', [LinkController::class, 'generate_link']);
 
 
 Route::fallback(function(){

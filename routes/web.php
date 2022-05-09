@@ -15,4 +15,6 @@ use App\Http\Controllers\Web\LinkController;
 */
 
 Route::get('/link-generator', [LinkController::class, 'show_link_generator']);
+Route::get('/{slug}', [LinkController::class, 'go_to_link']);
+
 
