@@ -26,10 +26,13 @@
 
     <!-- Scripts -->
     <script src="{{ mix('js/app.js') }}" defer></script>
-    
-    </style>  
+    <script>
+        window.base_url = '{{ env("APP_URL") }}';
+    </script>
+     
     
 </head>
+
 
 <body>
     <noscript>To run this application, JavaScript is required to be enabled.</noscript>
