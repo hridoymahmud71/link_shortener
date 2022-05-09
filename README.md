@@ -15,6 +15,6 @@ Go to https://testsafebrowsing.appspot.com/  to find malicious site links
 If the Original given url is empty/invalid/malicious , exeption(s) will be shown
 
 #### How to run
-Vue was integrated using laravel mixin, so you will not be able to run the frontend using serve
+_Vue was integrated using laravel mixin, so you will not be able to run the frontend using serve_
 
 
