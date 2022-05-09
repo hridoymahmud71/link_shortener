@@ -8,9 +8,9 @@ Laravel , Vue  2, Tailwind
 Go to https://testsafebrowsing.appspot.com/  to find malicious site links
 
 #### Link Generation
-1.Go to [[your_url]]/link-generator 
-2.A shortened version of a longer url can be created from here.
-3.The shorened url can be used to share to people. After clicking , it will be redireced to the original url
+1. Go to [[your_url]]/link-generator 
+2. A shortened version of a longer url can be created from here.
+3. The shorened url can be used to share to people. After clicking , it will be redireced to the original url
 
 If the Original given url is empty/invalid/malicious , exeption(s) will be shown
 
